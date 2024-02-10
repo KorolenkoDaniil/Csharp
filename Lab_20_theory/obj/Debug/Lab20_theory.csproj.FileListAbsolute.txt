@@ -1,0 +1,7 @@
+D:\C#\Lab_20_theory\bin\Debug\Lab_20_theory.exe.config
+D:\C#\Lab_20_theory\bin\Debug\Lab_20_theory.exe
+D:\C#\Lab_20_theory\bin\Debug\Lab_20_theory.pdb
+D:\C#\Lab_20_theory\obj\Debug\Lab20_theory.csproj.AssemblyReference.cache
+D:\C#\Lab_20_theory\obj\Debug\Lab20_theory.csproj.CoreCompileInputs.cache
+D:\C#\Lab_20_theory\obj\Debug\Lab_20_theory.exe
+D:\C#\Lab_20_theory\obj\Debug\Lab_20_theory.pdb

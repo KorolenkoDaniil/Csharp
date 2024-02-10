@@ -1,0 +1,7 @@
+D:\C#\Day19_1\bin\Debug\Day19_1.exe.config
+D:\C#\Day19_1\bin\Debug\Day19_1.exe
+D:\C#\Day19_1\bin\Debug\Day19_1.pdb
+D:\C#\Day19_1\obj\Debug\Day19_1.csproj.AssemblyReference.cache
+D:\C#\Day19_1\obj\Debug\Day19_1.csproj.CoreCompileInputs.cache
+D:\C#\Day19_1\obj\Debug\Day19_1.exe
+D:\C#\Day19_1\obj\Debug\Day19_1.pdb

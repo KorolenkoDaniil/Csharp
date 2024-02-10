@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<note>
+	<to>A</to>
+	<from>B</from>
+	<headling>Reminder</headling>
+	<message>Don't forget me this weekend!</message>
+
+
+	<!--XML-атрибуты заключаются в кавычки-->
+	
+	
+	<!--Некторые проблемы использования атрибутов
+	Атрибуты не могут быть многозначными (элементы могут)
+	Атрибуты не могут образовывать tree-структуру (элементы могут)
+	Атрибуты не просто расширить (при изменениях)-->
+
+	.NET использует XML Document Object Model (DOM), которяа представлена
+	набором классов, представляющих различные части XML document ( и сам
+	документ).
+
+	Class
+
+	Описание
+
+	XmlNode
+
+	Представляет узел в дереве XML document. (элементы,
+	атрибуты, комментарии).
+
+	XmlDocument
+
+	Представляет XML document. Может использоваться для
+	считывания XML-файла или сохранения.
+
+	XmlElement
+
+	Представляет XML element.
+
+	XmlAttribute
+
+	Представляет XML attribute.
+
+	XmlText
+
+	Представляет текст внутри XML element.
+
+	XmlComment
+
+	Представляет XML comment.
+
+
+</note>

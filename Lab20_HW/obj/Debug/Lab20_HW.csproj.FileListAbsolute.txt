@@ -1,0 +1,7 @@
+D:\C#\Lab20_HW\bin\Debug\Lab20_HW.exe.config
+D:\C#\Lab20_HW\bin\Debug\Lab20_HW.exe
+D:\C#\Lab20_HW\bin\Debug\Lab20_HW.pdb
+D:\C#\Lab20_HW\obj\Debug\Lab20_HW.csproj.AssemblyReference.cache
+D:\C#\Lab20_HW\obj\Debug\Lab20_HW.csproj.CoreCompileInputs.cache
+D:\C#\Lab20_HW\obj\Debug\Lab20_HW.exe
+D:\C#\Lab20_HW\obj\Debug\Lab20_HW.pdb

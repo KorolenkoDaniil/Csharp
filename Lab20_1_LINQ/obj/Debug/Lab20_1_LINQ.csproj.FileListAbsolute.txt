@@ -1,0 +1,7 @@
+D:\C#\Lab20_1_LINQ\bin\Debug\Lab20_1_LINQ.exe.config
+D:\C#\Lab20_1_LINQ\bin\Debug\Lab20_1_LINQ.exe
+D:\C#\Lab20_1_LINQ\bin\Debug\Lab20_1_LINQ.pdb
+D:\C#\Lab20_1_LINQ\obj\Debug\Lab20_1_LINQ.csproj.AssemblyReference.cache
+D:\C#\Lab20_1_LINQ\obj\Debug\Lab20_1_LINQ.csproj.CoreCompileInputs.cache
+D:\C#\Lab20_1_LINQ\obj\Debug\Lab20_1_LINQ.exe
+D:\C#\Lab20_1_LINQ\obj\Debug\Lab20_1_LINQ.pdb
