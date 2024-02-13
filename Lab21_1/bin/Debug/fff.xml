@@ -1,0 +1,20 @@
+<Root>
+  <Motherboard>
+    <name>1</name>
+    <mark>1</mark>
+    <amountOfRAM>1</amountOfRAM>
+    <amountOfRAM>1</amountOfRAM>
+  </Motherboard>
+  <Motherboard>
+    <name>1</name>
+    <mark>1</mark>
+    <amountOfRAM>1</amountOfRAM>
+    <amountOfRAM>1</amountOfRAM>
+  </Motherboard>
+  <Motherboard>
+    <name>2</name>
+    <mark>2</mark>
+    <amountOfRAM>2</amountOfRAM>
+    <amountOfRAM>2</amountOfRAM>
+  </Motherboard>
+</Root>
