@@ -1,0 +1,7 @@
+D:\C#\Day21\bin\Debug\Day21.exe.config
+D:\C#\Day21\bin\Debug\Day21.exe
+D:\C#\Day21\bin\Debug\Day21.pdb
+D:\C#\Day21\obj\Debug\Day21.csproj.AssemblyReference.cache
+D:\C#\Day21\obj\Debug\Day21.csproj.CoreCompileInputs.cache
+D:\C#\Day21\obj\Debug\Day21.exe
+D:\C#\Day21\obj\Debug\Day21.pdb

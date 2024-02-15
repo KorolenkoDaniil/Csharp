@@ -1,0 +1,13 @@
+<GreenHouse>
+  <Flower id="1">
+    <name>маргаритка</name>
+    <soil>грунтовая</soil>
+    <origin>2</origin>
+    <VisualParamElem>
+      <param>апролд</param>
+      <param>вапрол</param>
+      <param>пролд</param>
+    </VisualParamElem>
+    <multiplying>черенками</multiplying>
+  </Flower>
+</GreenHouse>

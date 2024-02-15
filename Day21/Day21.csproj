@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{36C32F5E-66C8-432C-9BA0-EA100B017CBE}</ProjectGuid>
+    <ProjectGuid>{6B8B578D-C564-46EA-96EA-062DE9941197}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lab21_theory</RootNamespace>
-    <AssemblyName>Lab21_theory</AssemblyName>
+    <RootNamespace>Day21</RootNamespace>
+    <AssemblyName>Day21</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,9 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Person.cs" />
+    <Compile Include="ChoiceClass.cs" />
+    <Compile Include="Flower.cs" />
+    <Compile Include="LINQ\LINQMenu.cs" />
+    <Compile Include="LINQ\Search.cs" />
+    <Compile Include="MenuMorkWithXML\ChoiceOfFileFunction.cs" />
+    <Compile Include="MenuMorkWithXML\Createfunction.cs" />
+    <Compile Include="MenuMorkWithXML\DeleteFileFunction.cs" />
+    <Compile Include="MenuMorkWithXML\MakeNewFileFunction.cs" />
+    <Compile Include="MenuMorkWithXML\MenuOfWorkWithXML.cs" />
+    <Compile Include="MenuMorkWithXML\NewElementFunction.cs" />
+    <Compile Include="MenuMorkWithXML\PrintNodesFunction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
