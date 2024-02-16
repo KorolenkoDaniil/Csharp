@@ -47,8 +47,10 @@
   <ItemGroup>
     <Compile Include="ChoiceClass.cs" />
     <Compile Include="Flower.cs" />
+    <Compile Include="LINQ\GroupbyOrigin.cs" />
     <Compile Include="LINQ\LINQMenu.cs" />
     <Compile Include="LINQ\Search.cs" />
+    <Compile Include="LINQ\SortByNames.cs" />
     <Compile Include="MenuMorkWithXML\ChoiceOfFileFunction.cs" />
     <Compile Include="MenuMorkWithXML\Createfunction.cs" />
     <Compile Include="MenuMorkWithXML\DeleteFileFunction.cs" />

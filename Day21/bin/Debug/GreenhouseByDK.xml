@@ -10,4 +10,24 @@
     </VisualParamElem>
     <multiplying>черенками</multiplying>
   </Flower>
+  <Flower id="2">
+    <name>гортензия</name>
+    <soil>подзолистая</soil>
+    <origin>3</origin>
+    <VisualParamElem>
+      <param>ппппппппп</param>
+      <param>ппппппппппппппп</param>
+      <param>оооооооооооооо</param>
+    </VisualParamElem>
+    <multiplying>черенками</multiplying>
+  </Flower>
+  <Flower id="3">
+    <name>yyyyyyyyyy</name>
+    <soil>подзолистая</soil>
+    <origin>2</origin>
+    <VisualParamElem>
+      <param>agdfgdg</param>
+    </VisualParamElem>
+    <multiplying>черенками</multiplying>
+  </Flower>
 </GreenHouse>

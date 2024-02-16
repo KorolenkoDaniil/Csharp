@@ -8,9 +8,17 @@ namespace Day21.LINQ
 {
     internal static class Search
     {
-        //public static Flower SearchItem(List <Flower> GreenHouse)
-        //{
-            
-        //}
+        public static Flower SearchItem(List<Flower> GreenHouse, string parameter)
+        {
+            var necessaryFlower = (from flower in GreenHouse
+                                   //from visualParam in flower.VisualParameters
+                                   where flower.Name.ToLower() == parameter.ToLower()
+                                   //flower.Soil.ToLower() == parameter.ToLower() ||
+                                   //flower.Origin.ToLower() == parameter.ToLower() ||
+                                   //visualParam.ToLower() == parameter.ToLower()
+                                   select flower).FirstOrDefault();
+            return necessaryFlower;
+        }
+
     }
 }

@@ -19,7 +19,7 @@ namespace Day21.LINQ
 
             foreach (XmlNode FlowerNode in xdoc.DocumentElement.ChildNodes)
             {
-                Flower flower = new Flower();   
+                Flower flower = new Flower();
                 if (FlowerNode.Attributes.Count > 0)
                 {
                     foreach (XmlAttribute xmlAttribute in FlowerNode.Attributes)
@@ -31,7 +31,6 @@ namespace Day21.LINQ
                     }
                 }
 
-
                 if (FlowerNode.HasChildNodes)
                 {
                     foreach (XmlNode dataNode1 in FlowerNode.ChildNodes)
@@ -39,19 +38,17 @@ namespace Day21.LINQ
                         if (dataNode1.Name == "name") flower.Name = dataNode1.InnerText;
                         if (dataNode1.Name == "soil") flower.Soil = dataNode1.InnerText;
                         if (dataNode1.Name == "origin") flower.Origin = dataNode1.InnerText;
-                        List<string> param = new List<string>();
-                        Console.WriteLine($"{dataNode1.Name}: {dataNode1.InnerText}");
-                        if (dataNode1.HasChildNodes)
+                        if (dataNode1.Name == "VisualParamElem" && dataNode1.HasChildNodes)
                         {
-                            param = new List<string>();
+                            List<string> param = new List<string>();
                             foreach (XmlNode dataNode2 in dataNode1.ChildNodes)
                             {
                                 if (dataNode2.Name == "param") param.Add(dataNode2.InnerText);
                                 Console.WriteLine($"{dataNode2.Name}: {dataNode2.InnerText}");
                             }
-                            
+                            flower.VisualParameters = param;
                         }
-                        flower.VisualParameters = param;
+                        Console.WriteLine($"{dataNode1.Name}: {dataNode1.InnerText}");
                     }
                     Console.WriteLine("--------------------------");
                 }
@@ -59,20 +56,11 @@ namespace Day21.LINQ
             }
 
 
-            Console.WriteLine("!!!!!!!!!!");
-            Console.WriteLine();
-            Console.WriteLine(GreenHouse[0]);
-            Console.WriteLine("!!!!!!!!!!");
-
-
-
-
-
             do
             {
-                Console.WriteLine("осуществить поиск ");
-                Console.WriteLine("сортировать данные по убыванию названий");
-                Console.WriteLine("сгруппировать данные по месту происхождения");
+                Console.WriteLine("1 - осуществить поиск ");
+                Console.WriteLine("2 - сортировать данные по убыванию названий");
+                Console.WriteLine("3 - сгруппировать данные по месту происхождения");
                 n = int.Parse(Console.ReadLine());
             }while (n < 1 ||  n > 3);
             
@@ -80,17 +68,41 @@ namespace Day21.LINQ
             {
                 case 1:
                     {
+                        Console.WriteLine("для поиска введите название/почву/происхождение/визуальный параметр");
+                        string searchParam = Console.ReadLine();
 
+                        Flower selectedFlower = Search.SearchItem(GreenHouse, searchParam);
+
+                        if (selectedFlower != null) Console.WriteLine("ничего не удалось найти, проверьте данные, которые ввели");
+                        else
+                        {
+                            Console.WriteLine(selectedFlower); ;
+                        }
                         break;
                     }
                 case 2:
                     {
+                        Print(SortByNames.SortbyNames(GreenHouse));
                         break;
                     }
                 case 3:
                     {
+                        IGrouping<string, Flower> GroupedGreenhouse = GroupbyOrigin.Groupbyorigin(GreenHouse);
+                        foreach (Flower flower in GroupedGreenhouse)
+                        {
+                            Console.WriteLine(flower);
+                        }
                         break;
                     }
+            }
+        }
+
+        public static void Print(List <Flower> GreenHouse)
+        {
+            for (int i = 0; i <  GreenHouse.Count; i++)
+            {
+                Console.WriteLine(GreenHouse[i]);
+                Console.WriteLine("-----------------------------");
             }
         }
     }

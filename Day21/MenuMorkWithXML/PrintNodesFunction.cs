@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Xml;
 
 namespace Day21.MenuMorkWithXML
@@ -7,32 +8,61 @@ namespace Day21.MenuMorkWithXML
     {
         public static void PrintNodes(ref XmlDocument xdoc)
         {
-            foreach (XmlNode personNode in xdoc.DocumentElement.ChildNodes)
+            foreach (XmlNode FlowerNode in xdoc.DocumentElement.ChildNodes)
             {
-                if (personNode.Attributes.Count > 0)
+                Flower flower = new Flower();
+                if (FlowerNode.Attributes.Count > 0)
                 {
-                    foreach (XmlAttribute xmlAttribute in personNode.Attributes)
+                    foreach (XmlAttribute xmlAttribute in FlowerNode.Attributes)
                     {
-                        Console.WriteLine($"{xmlAttribute.Name} {xmlAttribute.InnerText}");
+                        if (xmlAttribute.Name == "id")
+                        {
+                            flower.Id = int.Parse(xmlAttribute.InnerText);
+                        }
                     }
                 }
 
-                if (personNode.HasChildNodes)
+                if (FlowerNode.HasChildNodes)
                 {
-                    foreach (XmlNode dataNode1 in personNode.ChildNodes)
+                    foreach (XmlNode dataNode1 in FlowerNode.ChildNodes)
                     {
-                        Console.WriteLine($"{dataNode1.Name}: {dataNode1.InnerText}");
-                        if (dataNode1.HasChildNodes)
                         {
                             foreach (XmlNode dataNode2 in dataNode1.ChildNodes)
                             {
                                 Console.WriteLine($"{dataNode2.Name}: {dataNode2.InnerText}");
                             }
                         }
+                        Console.WriteLine($"{dataNode1.Name}: {dataNode1.InnerText}");
                     }
                     Console.WriteLine("--------------------------");
                 }
             }
+            //foreach (XmlNode personNode in xdoc.DocumentElement.ChildNodes)
+            //{
+            //    if (personNode.Attributes.Count > 0)
+            //    {
+            //        foreach (XmlAttribute xmlAttribute in personNode.Attributes)
+            //        {
+            //            Console.WriteLine($"{xmlAttribute.Name} {xmlAttribute.InnerText}");
+            //        }
+            //    }
+
+            //    if (personNode.HasChildNodes)
+            //    {
+            //        foreach (XmlNode dataNode1 in personNode.ChildNodes)
+            //        {
+            //            Console.WriteLine($"{dataNode1.Name}: {dataNode1.InnerText}");
+            //            if (dataNode1.HasChildNodes)
+            //            {
+            //                foreach (XmlNode dataNode2 in dataNode1.ChildNodes)
+            //                {
+            //                    Console.WriteLine($"{dataNode2.Name}: {dataNode2.InnerText}");
+            //                }
+            //            }
+            //        }
+            //        Console.WriteLine("--------------------------");
+            //    }
+            //}
         }
     }
 }
