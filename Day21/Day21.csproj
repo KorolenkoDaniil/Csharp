@@ -57,10 +57,11 @@
     <Compile Include="MenuMorkWithXML\MakeNewFileFunction.cs" />
     <Compile Include="MenuMorkWithXML\MenuOfWorkWithXML.cs" />
     <Compile Include="MenuMorkWithXML\NewElementFunction.cs" />
-    <Compile Include="MenuMorkWithXML\PrintNodesFunction.cs" />
+    <Compile Include="PrintNodesFunction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validator.cs" />
+    <Compile Include="XPath\XpathFiltration.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

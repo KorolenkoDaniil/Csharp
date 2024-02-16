@@ -1,5 +1,6 @@
 ﻿using Day21.LINQ;
 using Day21.MenuMorkWithXML;
+using Day21.XPath;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -38,11 +39,12 @@ namespace Day21
                     Console.WriteLine("3 - чтение объектов и добавление новых");
                     Console.WriteLine("4 - удаление объекта");
                     Console.WriteLine("5 - Работа с LiNQ");
+                    Console.WriteLine("6 - фильтрация по почве");
                     Console.WriteLine("0 - выход");
 
                     Console.WriteLine("выберите пункт меню ");
                     n = int.Parse(Console.ReadLine());
-                } while (n < 0 || n > 5);
+                } while (n < 0 || n > 6);
 
                 if (n == 0)
                 {
@@ -83,6 +85,24 @@ namespace Day21
                     case 5:
                         {
                             LINQMenu.Menu(xdoc, filePath);
+                            break;
+                        }
+                    case 6:
+                        {
+                            Console.WriteLine("растения с типом земли \"грунтовая\"");
+                            XmlNodeList list1 = XpathFiltration.PrimingList(xdoc, filePath);
+                            PrintNodesFunction.PrintNodesList(ref list1);
+
+         
+                            Console.WriteLine("растения с типом земли \"подзолистая\"");
+                            XmlNodeList list2 = XpathFiltration.PodzolicList(xdoc, filePath);
+                            PrintNodesFunction.PrintNodesList(ref list2);
+
+                            
+                            Console.WriteLine("растения с типом земли \"дерново-подзолистая\"");
+                            XmlNodeList list3 = XpathFiltration.SodPodzolicList(xdoc, filePath);
+                            PrintNodesFunction.PrintNodesList(ref list3);
+
                             break;
                         }
                 }
